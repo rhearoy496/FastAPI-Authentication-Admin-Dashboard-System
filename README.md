@@ -37,19 +37,19 @@ A full-stack authentication system built with FastAPI and JWT authentication.
   
   Registration : 
   
-  <img width="1919" height="882" alt="image" src="https://github.com/user-attachments/assets/cec4df51-4020-4e1d-9ee6-47261880832f" />
+  <img width="2500" height="882" alt="image" src="https://github.com/user-attachments/assets/cec4df51-4020-4e1d-9ee6-47261880832f" />
   
   Login :
    
-  <img width="1900" height="906" alt="image" src="https://github.com/user-attachments/assets/1d57d408-6e18-4344-8a41-494f2e78e5ae" />
+  <img width="2500" height="906" alt="image" src="https://github.com/user-attachments/assets/1d57d408-6e18-4344-8a41-494f2e78e5ae" />
     
   Admin Dashboard :
   
-  <img width="1919" height="907" alt="image" src="https://github.com/user-attachments/assets/c0e3b748-4794-4f5c-91ad-1e3be1a9fe3c" />
+  <img width="2500" height="907" alt="image" src="https://github.com/user-attachments/assets/c0e3b748-4794-4f5c-91ad-1e3be1a9fe3c" />
   
   User Dashboard :
   
-  <img width="1914" height="913" alt="image" src="https://github.com/user-attachments/assets/de739186-d5d1-4c69-b2eb-3d5142b8fc4c" />
+  <img width="2500" height="913" alt="image" src="https://github.com/user-attachments/assets/de739186-d5d1-4c69-b2eb-3d5142b8fc4c" />
 
 
 ## Installation
