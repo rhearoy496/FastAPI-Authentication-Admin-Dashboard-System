@@ -34,7 +34,9 @@ A full-stack authentication system built with FastAPI and JWT authentication.
 
 
 ## Screenshots
-  Registration :
+
+  Registration : 
+  
     <img width="1919" height="882" alt="image" src="https://github.com/user-attachments/assets/cec4df51-4020-4e1d-9ee6-47261880832f" />
   Login :
     <img width="1900" height="906" alt="image" src="https://github.com/user-attachments/assets/1d57d408-6e18-4344-8a41-494f2e78e5ae" />
