@@ -25,11 +25,11 @@ A full-stack authentication system built with FastAPI and JWT authentication.
 ## System Architecture 
 
   Frontend (HTML, CSS, JavaScript)
-        ↓
+        ->
   FastAPI Backend (REST API)
-        ↓
+        ->
   JWT Authentication
-        ↓
+        ->
   SQLite Database
 
 
