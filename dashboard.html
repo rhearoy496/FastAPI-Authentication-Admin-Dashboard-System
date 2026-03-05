@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Dashboard</h2>
+        <div id="content"></div>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <script>
+        function logout() {
+            localStorage.removeItem("token");
+            window.location.href = "/";
+        }
+        const token = localStorage.getItem("token");
+
+        if (!token) {
+            window.location.href = "/";
+        }
+
+        fetch("/dashboard", {
+    headers: {
+        "Authorization": "Bearer " + token
+    }
+})
+.then(res => res.json())
+.then(data => {
+
+    if (data.is_admin) {
+        window.location.href = "/admin-page";
+        return;
+    }
+
+    document.getElementById("content").innerHTML = `
+        <h3>Welcome ${data.name}</h3>
+        <img src="/uploads/${data.profile_image}" width="150">
+    `;
+});
+    </script>
+</body>
+</html>

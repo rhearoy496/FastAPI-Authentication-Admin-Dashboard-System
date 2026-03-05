@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Register</h2>
+
+        <form id="registerForm" enctype="multipart/form-data">
+    <input type="text" id="reg_name" placeholder="Name" required>
+    <input type="email" id="reg_email" placeholder="Email" required>
+    <input type="password" id="reg_password" placeholder="Password" required>
+    <input type="file" id="reg_image" accept="image/*" required>
+    <button type="submit">Register</button>
+        </form>
+
+        <p id="reg_message"></p>
+
+        <p>
+            Already have an account?
+            <a href="/">Login</a>
+        </p>
+    </div>
+
+    <script src="/static/register.js"></script>
+</body>
+</html>

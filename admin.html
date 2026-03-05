@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Admin Dashboard</h2>
+        <div id="adminContent"></div>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <script>
+
+        function logout() {
+            localStorage.removeItem("token");
+            window.location.href = "/";
+        }
+        
+        const token = localStorage.getItem("token");
+
+        if (!token) {
+            window.location.href = "/";
+        }
+
+        fetch("/admin-data", {
+            headers: {
+                "Authorization": "Bearer " + token
+            }
+        })
+        .then(res => {
+            if (res.status === 403) {
+                alert("Not authorized");
+                window.location.href = "/dashboard-page";
+            }
+            return res.json();
+        })
+        .then(data => {
+            document.getElementById("adminContent").innerHTML =
+                `<h3>Total Users: ${data.total_users}</h3>` +
+                data.users.map(user =>
+                    `<div>
+                        <p>${user.name} (${user.email})</p>
+                        <img src="/uploads/${user.profile_image}" width="100">
+                     </div>`
+                ).join("");
+        });
+
+        
+    </script>
+</body>
+</html>
